@@ -1,0 +1,281 @@
+.homeSection {
+    border: 1px solid rgb(65, 63, 63);
+    border-bottom: 1px solid rgb(65, 63, 65);
+    padding-bottom: 10px;
+}
+.homey {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid rgb(65, 63, 65);
+}
+.home {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+.timeline-prop img {
+    height: 40px;
+}
+.pp {
+    display: flex;
+    gap: 30px;
+    margin-left: 25px;
+    padding-top: 10px;
+}
+input {
+    background: none;
+    border: none;
+    width: 1000px;
+    height: 50px;
+    color: white;
+}
+.status {
+    font-size: 40px;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+}
+.status-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px 5px 80px;
+    border-bottom: 1px solid rgb(65, 63, 63);
+}
+.status-imgs {
+    height: 30px;
+    cursor: pointer;
+    padding-left: 20px;
+    filter: invert(26%) sepia(97%) saturate(748%) hue-rotate(190deg) brightness(95%) contrast(91%);
+}
+.tweet {
+    cursor: pointer;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.8em 2em;
+    /* margin-left: 20px; */
+    display: block;
+    width: 100px;
+  }
+  
+  .tweet:hover {
+    background-color: #1991d0;
+  }
+  .cnn-tweet {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 1px solid rgb(65, 63, 63);
+  }
+.twitter {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 1px solid rgb(65, 63, 63);
+}
+
+  .new-york-tweet {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  .tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 300px;
+    border-bottom: 1px solid rgb(65, 63, 63);
+    margin-bottom: 10px;
+  }
+  .verified-icon {
+    margin-left: 5px;
+  }
+.tweet-name {
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.leaf-image {
+    width: 1200px;
+    border-radius:20px;
+}
+.tweet-handle {
+    color: #888888;
+    font-size: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.cnn-tweet-info p {
+    font-size: 40px;
+    line-height: 1.2;
+}
+.tweet-engagements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 300px;
+}
+.action {
+    display: flex;
+    align-items: center;;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+.tweet-engagement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 232px;
+}
+.actions {
+    display: flex;
+    align-items: center;;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+/* Your original styles remain unchanged */
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    .homey {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pp {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    input.status {
+        font-size: 20px;
+        width: 90%;
+    }
+    .status-img {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cnn-tweet {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cnn-tweet-info p {
+        font-size: 20px;
+    }
+    .tweet-engagements {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+    .tweet-name {
+        font-size: 20px;
+    }
+    .tweet-handle {
+        font-size: 16px;
+    }
+    .leaf-image {
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767.98px) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .homey {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pp {
+        flex-direction: row;
+        gap: 15px;
+    }
+    input.status {
+        font-size: 25px;
+        width: 80%;
+    }
+    .status-img {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cnn-tweet {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .cnn-tweet-info p {
+        font-size: 25px;
+    }
+    .tweet-name {
+        font-size: 25px;
+    }
+    .tweet-handle {
+        font-size: 18px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991.98px) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    input.status {
+        font-size: 30px;
+        width: 85%;
+    }
+    .cnn-tweet {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .cnn-tweet-info p {
+        font-size: 30px;
+    }
+    .tweet-name {
+        font-size: 28px;
+    }
+    .tweet-handle {
+        font-size: 20px;
+    }
+    .leaf-image {
+        width: 90%;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199.98px) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    input.status {
+        font-size: 35px;
+    }
+    .cnn-tweet-info p {
+        font-size: 35px;
+    }
+    .tweet-name {
+        font-size: 30px;
+    }
+    .tweet-handle {
+        font-size: 22px;
+    }
+    .leaf-image {
+        width: 95%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    input.status {
+        font-size: 40px;
+    }
+    .cnn-tweet-info p {
+        font-size: 40px;
+    }
+    .tweet-name {
+        font-size: 30px;
+    }
+    .tweet-handle {
+        font-size: 25px;
+    }
+}

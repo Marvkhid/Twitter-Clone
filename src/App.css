@@ -1,0 +1,127 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app {
+  font-family: 'Times New Roman', Times, serif;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1.5fr;
+  background: #171717;
+  color: white;
+  min-height: 100vh;
+}
+
+.left-section {
+  background: #15202b;
+  color: #fff;
+  min-height: 100vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.profilePicture {
+  height: 60px;
+  border-radius: 40%;
+}
+
+.right-section {
+  background: #15202b;
+  min-height: 100vh;
+}
+
+/* Media Queries */
+
+/* Small Devices (Phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .left-section,
+  .right-section {
+    display: none;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+}
+
+/* Medium Devices (Tablets, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .left-section,
+  .right-section {
+    display: none;
+  }
+
+  nav a {
+    font-size: 1.1em;
+  }
+}
+
+/* Large Devices (Desktops, 768px to 1200px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .app {
+    grid-template-columns: 0.6fr 2fr 0.6fr;
+  }
+
+  .left-section,
+  .right-section {
+    min-height: 80vh;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px to 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .app {
+    grid-template-columns: 0.8fr 2fr 1.2fr;
+  }
+
+  .left-section,
+  .right-section {
+    min-height: 90vh;
+  }
+
+  nav a {
+    font-size: 1.3em;
+  }
+}
+
+/* XXL Devices (Extra Large Monitors, 1400px and above) */
+@media (min-width: 1400px) {
+  .app {
+    grid-template-columns: 1fr 2fr 1.5fr;
+  }
+
+  .left-section,
+  .right-section {
+    min-height: 100vh;
+  }
+
+  nav a {
+    font-size: 1.4em;
+  }
+}
