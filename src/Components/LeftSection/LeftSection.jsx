@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './LeftSection.css';
 import TwitterIcon from '../../assets/Twitter.png';
 import ProfilePicture from '../../assets/ProfilePicture.jpg';
-import HomeIcon from '../../assets/Home-fill.png';
+import HomeIcon from '../../assets/Home.png';
 import ExploreIcon from '../../assets/Explore.png';
 import NotificationsIcon from '../../assets/Notifications.png';
 import MessagesIcon from '../../assets/Messages.png';
